@@ -1,11 +1,15 @@
 #!/bin/bash
+
 readme=`cat<<EOF
 This is a tool for automatically spectate in Dota2. As the game updated to Source2, some command under console are not worked at all. So it is necessary to use a xdotool script.
 Please set proper coordinate as your resolution for your mouse.
 EOF`
-echo $readme 
+
+echo $readme
+ 
 WID=`xdotool search --name "dota"`
 xdotool windowactivate --sync $WID
+
 while : 
 do
 	xdotool mousemove -w $WID 1050 295 
