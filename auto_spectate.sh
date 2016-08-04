@@ -12,9 +12,9 @@ xdotool windowactivate --sync $WID
 
 while : 
 do
-	xdotool mousemove -w $WID 1050 295 
+	xdotool mousemove -w $WID 1050 325
 	xdotool click 1
 	# To skip any error raised by game
 	xdotool key Escape
-	sleep 5s
+	sleep 360s
 done
